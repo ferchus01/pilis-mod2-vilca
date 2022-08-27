@@ -28,6 +28,30 @@ function onClick(event) {
     .catch((err) => console.log(err));
 }
 
+async function getWeather() {
+  try {
+    let res = await fetch(
+      "https://api.openweathermap.org/data/2.5/weather?lat=-24.18&lon=-65.33&appid=ba4c68d373d02260006f025bc6762166"
+    );
+    let weather = await res.json();
+    return weather;
+  } catch (error) {
+    console.log(err);
+  }
+}
+
+async function setWeather() {
+  let weather = await getWeather();
+  console.log(weather);
+  document.querySelector(".num").innerText = parseInt(weather.main.temp - 273);
+  let weatherDesc =
+    weather.weather[0].description === "clear sky" ? "Despejado" : "Nublado";
+  document.querySelector("#weather").innerText = weatherDesc;
+  document.querySelector("#city").innerText = weather.name;
+}
+
+setWeather();
+
 function cleanForm() {
   let formulario = document.getElementById("formulario");
   formulario.reset();

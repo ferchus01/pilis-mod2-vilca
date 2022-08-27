@@ -79,9 +79,8 @@ a {
     font-size: 21px;
 }
 
-section {
+.section {
     display: flex;
-    font-family: 'Roboto', sans-serif;
     flex-direction: row;
     flex-wrap: nowrap;
     margin-top: 50px;
@@ -111,7 +110,9 @@ section {
 }
 
 .showcase-text .large {
-    color: black
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 
@@ -141,13 +142,10 @@ p {
 
 /* Register */
 
-#registration {
-    /* background: #F5DF99 */
-}
-
 .register-form {
     flex: 1.3;
     padding: 20px;
+    padding-left: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -202,4 +200,60 @@ form .form-control:hover {
     background: #fff;
     border: 1px solid #4B8673;
     color: #4B8673;
+}
+
+/* SECTION #2
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.weather-part {
+    display: none;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #F5DF99;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.weather-part .title {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.weather-part {
+    display: flex;
+}
+
+.weather-part img {
+    max-width: 100px;
+}
+
+.weather-part .temp {
+    display: flex;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.weather-part .temp .numb {
+    font-weight: 600;
+}
+
+.weather-part .temp .deg {
+    font-size: 20px;
+    display: block;
+    margin: 10px 5px 0 0;
+}
+
+.weather-part .weather {
+    font-size: 20px;
+    text-align: center;
+    margin: -5px 20px 15px;
+}
+
+/* Footer */
+
+hr {
+    margin: 40px 0px;
 }
