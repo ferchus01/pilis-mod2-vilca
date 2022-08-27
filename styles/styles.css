@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+/* General */
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #F6FBF4;
+    color: #4B8673;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#navbar .logo {
+    padding: 10px;
+    padding-right: 30px;
+}
+
+#navbar .logo img {
+    height: 80px;
+}
+
+#navbar ul {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    padding: 10px;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: #4B8673;
+}
+
+#navbar ul li a:hover {
+    background-color: #F5DF99;
+}
+
+/* Main */
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)), url("../assets/img-home.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+#home .home-text {
+    color: #F6FBF4;
+    text-align: center;
+}
+
+#home .home-title {
+    font-size: 60px;
+}
+
+#home .home-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+}
+
+section {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+}
+
+/* Showcase */
+
+.showcase-img {
+    flex: 1;
+}
+
+.showcase-img img {
+    width: 100%;
+}
+
+
+.showcase-text {
+    flex: 1.5;
+    justify-content: center;
+    padding: 32px;
+    padding-top: 0px;
+}
+
+.showcase-text .title {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.showcase-text .large {
+    color: black
+}
+
+
+.showcase-text h1 {
+    font-weight: 500;
+    margin: 0px;
+}
+
+.container {
+    margin: auto;
+    max-width: 1300px;
+    padding: 0 25px;
+}
+
+/* General */
+h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #FFF;
+    ;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.7em;
+}
